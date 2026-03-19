@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <div class="topbar">
+    <h2>BTC: <span id="btc">Loading...</span></h2>
+    <h2>ETH: <span id="eth">Loading...</span></h2>
+    <h2>BNB: <span id="bnb">Loading...</span></h2>
+    <h2>XRP: <span id="xrp">Loading...</span></h2>
+    <h2>DOGE: <span id="doge">Loading...</span></h2>
+  </div>
+
+  <div class="container">
+
+    
+    <div class="menu">
+      <h3>MENU</h3>
+      <a href="index.html">Information</a>
+      <a href="games.html">Games</a>
+      <a href="quiz.html" class="active">Quiz</a>
+      <a href="buy.html">How to Buy</a>
+      <a href="donations.html">Donation</a>
+	  <a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<hr style="margin:20px 0; border:1px solid var(--main);">
+
+<button onclick="setTheme('gold')" class="theme-btn">
+  🟡 Gold Theme
+</button>
+
+<button onclick="setTheme('neon')" class="theme-btn">
+  💚 Neon Theme
+</button>
+
+<button onclick="setTheme('purple')" class="theme-btn">
+  💜 Purple Theme
+</button>
+    </div>
+
+    
+    <div class="content">
+
+      <h1>🧠 Crypto Quiz Challenge</h1>
+      <p>Test your knowledge about cryptocurrency!</p>
+
+      <div class="quiz-box">
+        <h2 id="question">Question will appear here</h2>
+
+        <div class="answers">
+          <button onclick="selectAnswer(0)" id="btn0">Answer 1</button>
+          <button onclick="selectAnswer(1)" id="btn1">Answer 2</button>
+          <button onclick="selectAnswer(2)" id="btn2">Answer 3</button>
+          <button onclick="selectAnswer(3)" id="btn3">Answer 4</button>
+        </div>
+
+        <h3 id="quizScore">Score: 0</h3>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
